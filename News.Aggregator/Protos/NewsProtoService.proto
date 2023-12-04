@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "News.API.Protos";
+import "google/protobuf/empty.proto";
+
+service NewsProtoService {
+ rpc GetNewsControllerAndActionName (google.protobuf.Empty)returns (GetControllerAndActionNameResponse) ;
+}
+
+message GetControllerAndActionNameResponse{
+	repeated ModulaInfo ModulaInfo =1;
+}
+message ModulaInfo {
+	string MethodVerd =1;
+    string Path =2;
+    string ControllerName =3;
+    string ActionName =4;
+    int64 key =5;
+}

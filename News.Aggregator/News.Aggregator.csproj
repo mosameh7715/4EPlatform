@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3c1d503a-ba11-4dea-abcf-81f4a8f291a2</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Protos\NewsProtoService.proto" />
+    <None Remove="Protos\WorkspacePermissionProto.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.59.0" />
+    <PackageReference Include="IdentityModel" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="ServerServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\NewsProtoService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\WorkspacePermissionProto.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+</Project>

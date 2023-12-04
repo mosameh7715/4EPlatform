@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.Aggregator", "News.Aggregator\News.Aggregator.csproj", "{87C81AC8-DBD0-4509-9CCD-24105BCA4369}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3BAA0499-E7D8-46C1-B698-DA5A08AF17FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News", "News", "{2089CF1C-75F5-49E5-8327-175A13ABA8C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87C81AC8-DBD0-4509-9CCD-24105BCA4369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C81AC8-DBD0-4509-9CCD-24105BCA4369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C81AC8-DBD0-4509-9CCD-24105BCA4369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C81AC8-DBD0-4509-9CCD-24105BCA4369}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87C81AC8-DBD0-4509-9CCD-24105BCA4369} = {2089CF1C-75F5-49E5-8327-175A13ABA8C7}
+		{2089CF1C-75F5-49E5-8327-175A13ABA8C7} = {3BAA0499-E7D8-46C1-B698-DA5A08AF17FE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D18BDAC-09C4-49C7-8C7E-F81E1DD467D3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿syntax = "proto3";
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+option csharp_namespace = "AdminPanel.UserManagement.Protos";
+
+
+service WorkspacePermissionProtoService {
+
+  rpc PostWorkspacePermission (RequestWorkspacePermissionRequest) returns (ResponseWorkspacePermission);
+}
+
+message RequestWorkspacePermissionRequest {
+ repeated ModuleInfo moduleInfo = 1;
+}
+
+message ResponseWorkspacePermission {
+  string Massge=1;
+}
+
+
+message ModuleInfo {
+	string methodVerd = 1;
+	string controllerName = 2;
+	string actionName = 3;
+	string path = 4;
+	string permissionId = 5;
+	int64 Key=6;
+    optional string workspaceId=7;
+}
